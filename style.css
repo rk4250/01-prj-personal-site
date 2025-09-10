@@ -1,1 +1,114 @@
-/* Add you CSS here */
+.header {
+  position: relative;  /* makes children absolute relative to this div */
+  width: 100%;
+  height: 280px;       /* same as background image height */
+}
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* makes the image fit nicely */
+}
+.small-ing {
+  position: absolute;
+  bottom: 1px; 
+  top: 300px;       /* 10px from bottom of the header */
+  left: 25%;          /* center horizontally */
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;  
+}
+
+h1, h2 {
+    position: absolute; /* place over the image */
+    left: 50%;          /* center horizontally */
+    transform: translateX(-50%);
+    color: white;       /* text color */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes text readable */
+}
+
+h1 {
+    top: 10px;     /* adjust vertical position */
+    font-size: 60px;
+}
+
+h2 {
+    top: 100px;    /* adjust vertical position */
+    font-size: 40px;
+}
+body{
+  background-color: white; 
+}
+.bottom-bar {
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 30px; 
+  background-color: rgb(211, 208, 208); /* semicolon added */
+  z-index: 1000; /* optional, ensures it stays above content */
+}
+.text-square1{
+  position: absolute; 
+  left: 700px; 
+  top: 360px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 290px; 
+  height: 390px; 
+  border-radius: 20px; 
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4); 
+}
+.text-square2{
+  position: absolute; 
+  left: 1100px; 
+  top: 360px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 290px; 
+  height: 390px; 
+  border-radius: 20px; 
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4); 
+}
+h3{
+  position: absolute; 
+  top: 360px; 
+  left: 780px; 
+  color: white;
+  font-size: 27px; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+}
+.para1{
+  position: absolute;
+  top: 400px;
+  left: 700px;
+  width: 280px; 
+  color: white;
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+}
+h4{
+  position: absolute; 
+  top: 360px; 
+  left: 1200px; 
+  color: white; 
+  font-size: 27px; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7)
+}
+.para2{
+  position: absolute; 
+  top: 400px; 
+  left: 1100px; 
+  width: 280px; 
+  color: white; 
+  font-size: 23px; 
+  line-height: 1.5; 
+  padding: 10px; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7)
+
+}
+
